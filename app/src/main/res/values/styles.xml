@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BottomNavigationStyle">
+        <item name="android:background">@color/layout_bg</item>
+        <item name="itemIconTint">@color/gray</item>
+    </style>
+
+    <style name="CustomSearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <!-- Other attributes of the SearchView style -->
+        <item name="android:textColorHint">#FF000000</item> <!-- Set the color to black -->
+    </style>
+
+
+
+</resources>

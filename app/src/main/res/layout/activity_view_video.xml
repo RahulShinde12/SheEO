@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewVideo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/layout_bg"
+        android:orientation="vertical">
+
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:text="Artificial Intelligence (AI) is a broad and interdisciplinary field that deals with creating intelligent systems capable of performing tasks that typically require human intelligence. Here are some key theoretical concepts related to AI:
+
+\nIntelligence and Learning:
+
+\nArtificial Intelligence: The development of computer systems that can perform tasks that normally require human intelligence, such as learning, reasoning, problem-solving, perception, and language understanding.
+Machine Learning: A subset of AI that focuses on creating algorithms and statistical models that enable computers to learn from and make predictions or decisions based on data without being explicitly programmed.
+\nTypes of AI:
+
+\nNarrow AI (Weak AI): AI systems designed to perform specific tasks within a limited domain, such as speech recognition, image classification, or playing chess.
+General AI (Strong AI): Hypothetical AI systems that possess the ability to understand, learn, and apply knowledge across different domains, similar to human intelligence.
+Superintelligent AI: AI systems that surpass human intelligence in virtually every aspect, potentially leading to significant societal impacts."
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+</ScrollView>

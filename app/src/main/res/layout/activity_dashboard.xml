@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg"
+    android:orientation="vertical"
+    tools:context=".Dashboard">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-8dp"
+        android:background="@color/layout_bg"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/message_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/faint_blue"
+                android:layout_marginLeft="-8dp"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:id="@+id/account3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="40dp"
+                    android:background="@color/faint_blue"
+                    android:layout_height="40dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/message"></ImageView>
+            </androidx.cardview.widget.CardView>
+
+
+            <!--            <androidx.appcompat.widget.SearchView-->
+            <!--                android:id="@+id/userName"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_toRightOf="@+id/latest_lead"-->
+            <!--                android:layout_marginTop="5dp"-->
+
+            <!--                android:layout_marginBottom="5dp"-->
+            <!--                android:layout_marginRight="60dp"-->
+            <!--                android:background="@drawable/rectangle_border_gray_color"-->
+            <!--                app:iconifiedByDefault="false"-->
+            <!--                android:fontFamily="sans-serif"-->
+            <!--                android:gravity="center"-->
+            <!--                android:padding="16dp"-->
+            <!--                app:searchHintIcon="@drawable/search"-->
+            <!--                style="@style/CustomSearchViewStyle"-->
+            <!--                app:queryHint="search" />-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/message_icon"
+                app:cardElevation="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/faint_blue">
+
+                    <EditText
+                        android:id="@+id/item_search_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="5dp"
+                        android:layout_toEndOf="@+id/item_search_icon"
+                        android:background="@color/faint_blue"
+                        android:hint="Search"
+                        android:imeOptions="actionSearch"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/item_search_icon"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@color/faint_blue"
+                        android:src="@drawable/ic_search_black_24dp"
+                        app:tint="#000000" />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/user_profile"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="-50dp"
+                android:layout_marginTop="13dp"
+                android:layout_toRightOf="@+id/userName"
+                android:gravity="end"
+                app:cardCornerRadius="35dp">
+
+                <ImageView
+                    android:id="@+id/account2"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/profile"></ImageView>
+            </androidx.cardview.widget.CardView>
+
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/userName"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginRight="50dp"-->
+            <!--                android:fontFamily="sans-serif"-->
+            <!--                android:gravity="center"-->
+
+            <!--                android:padding="16dp"-->
+            <!--                android:text="Select Manager"-->
+            <!--                android:textColor="@color/white"-->
+            <!--                android:textSize="18sp"-->
+            <!--                android:textStyle="bold" />-->
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Your other views here -->
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </FrameLayout>
+    >
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        style="@style/BottomNavigationStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemTextColor="@color/gray"
+        app:menu="@menu/bottom_navigation" />
+
+</LinearLayout>

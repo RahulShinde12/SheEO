@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:title="Home"
+        android:icon="@drawable/home" />
+
+    <item
+        android:id="@+id/navigation_short"
+        android:title="Shorts"
+        android:icon="@drawable/shorts" />
+
+    <item
+        android:id="@+id/navigation_event"
+        android:title="Events"
+        android:icon="@drawable/event" />
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_mentor"-->
+<!--        android:title="Mentorship"-->
+<!--        android:icon="@drawable/bulb" />-->
+
+    <item
+        android:id="@+id/navigation_funding"
+        android:title="Fundings"
+        android:icon="@drawable/funding" />
+
+    <item
+        android:id="@+id/navigation_skill"
+        android:title="Skill+"
+        android:icon="@drawable/skill" />
+</menu>
