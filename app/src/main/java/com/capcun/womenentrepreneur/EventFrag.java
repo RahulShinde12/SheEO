@@ -10,6 +10,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.DatePicker;
 import android.widget.LinearLayout;
 
@@ -23,6 +25,8 @@ import java.util.List;
  * create an instance of this fragment.
  */
 public class EventFrag extends Fragment {
+
+
 
 
     RecyclerView newgroupsrecycler;
@@ -92,6 +96,19 @@ public class EventFrag extends Fragment {
 
         newGroups(view);
         PopularNow(view);
+
+
+        WebView webView = view.findViewById(R.id.web);
+
+        // Enable JavaScript (optional)
+        webView.getSettings().setJavaScriptEnabled(true);
+
+        // Set a WebViewClient to handle page navigation
+        webView.setWebViewClient(new WebViewClient());
+
+        // Load a URL into the WebView
+        webView.loadUrl("https://brickzoneprop.com/WomenEM/APIS/calender/");
+
         return view;
     }
 

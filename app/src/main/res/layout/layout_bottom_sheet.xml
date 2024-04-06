@@ -105,6 +105,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="4.9 (11reviews"
                         android:layout_marginStart="10dp"
                         />
@@ -115,6 +116,7 @@
                 <TextView
                     android:background="@drawable/schedulecard"
                     android:paddingStart="10dp"
+                    android:textColor="@color/black"
                     android:paddingEnd="10dp"
                     android:paddingTop="5dp"
                     android:paddingBottom="5dp"
@@ -132,7 +134,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Good experince in General firm and lots of new expeerience "
-                    android:textColor="#008000"
+                    android:textColor="@color/black"
                     android:textSize="13sp"
                     ></TextView>
 
@@ -172,6 +174,7 @@
             android:layout_marginStart="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="3 Years"
             />
 
@@ -182,6 +185,7 @@
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:orientation="horizontal"
             >
 
@@ -193,6 +197,7 @@
             <TextView
                 android:layout_marginStart="20dp"
                 android:layout_width="match_parent"
+                android:textColor="@color/black"
                 android:layout_height="wrap_content"
                 android:text="36 Bookings"
                 />

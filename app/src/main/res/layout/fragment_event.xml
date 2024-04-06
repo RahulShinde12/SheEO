@@ -21,320 +21,281 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-<!--            <androidx.appcompat.widget.SearchView-->
-<!--                android:id="@+id/searchView"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="70dp"-->
-<!--                android:layout_marginLeft="10dp"-->
-<!--                android:layout_marginTop="15dp"-->
-<!--                android:layout_marginRight="10dp"-->
-<!--                android:background="@drawable/searchboxbg"-->
+            <!--            <androidx.appcompat.widget.SearchView-->
+            <!--                android:id="@+id/searchView"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="70dp"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:layout_marginTop="15dp"-->
+            <!--                android:layout_marginRight="10dp"-->
+            <!--                android:background="@drawable/searchboxbg"-->
 
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:iconifiedByDefault="false"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintTop_toTopOf="parent"-->
-<!--                app:queryHint="Search lead..." />-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:iconifiedByDefault="false"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toTopOf="parent"-->
+            <!--                app:queryHint="Search lead..." />-->
 
 
             <LinearLayout
-                android:orientation="vertical"
-                android:layout_marginStart="10dp"
-                android:paddingEnd="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                >
+                android:layout_marginStart="10dp"
+                android:orientation="vertical"
+                android:paddingEnd="10dp">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:nestedScrollingEnabled="true"
+                    android:layout_height="250dp">
+
+
+                    <WebView
+                        android:id="@+id/web"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </ScrollView>
+
 
                 <TextView
-                    android:layout_marginStart="10dp"
                     android:layout_width="match_parent"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/roboto_medium"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/roboto_medium"
                     android:text="Discover events by date"
+                    android:textColor="@color/black"
                     android:textSize="18dp"
-                    android:textStyle="bold"
-                    />
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_marginTop="5dp"
-                    android:layout_height="wrap_content">
-
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
 
 
                     <LinearLayout
-                        android:paddingStart="10dp"
-                        android:paddingEnd="10dp"
-                        android:paddingTop="5dp"
-                        android:paddingBottom="5dp"
-                        android:layout_marginStart="10dp"
                         android:layout_width="wrap_content"
-                        android:background="@drawable/devents"
-
                         android:layout_height="wrap_content"
-                        >
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/devents"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="10dp"
+
+                        android:paddingBottom="5dp">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:padding="5dp"
                             android:text="Today"
                             android:textColor="@color/black"
                             android:textSize="10dp"
-                            android:padding="5dp"
                             android:textStyle="bold"
 
                             />
 
                         <ImageView
-                            android:layout_gravity="center_vertical"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/arrow"
-                            />
-
-
-
-
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/arrow" />
 
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:paddingStart="10dp"
-                        android:paddingEnd="10dp"
-                        android:paddingTop="5dp"
-                        android:paddingBottom="5dp"
-                        android:layout_marginStart="10dp"
                         android:layout_width="wrap_content"
-                        android:background="@drawable/devents"
-
                         android:layout_height="wrap_content"
-                        >
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/devents"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="10dp"
+
+                        android:paddingBottom="5dp">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:padding="5dp"
                             android:text="Tomorrow"
                             android:textColor="@color/black"
-                            android:padding="5dp"
-                            android:textStyle="bold"
                             android:textSize="10dp"
+                            android:textStyle="bold"
 
 
                             />
 
                         <ImageView
-                            android:layout_gravity="center_vertical"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/arrow"
-                            />
-
-
-
-
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/arrow" />
 
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:paddingStart="10dp"
-                        android:paddingEnd="10dp"
-                        android:paddingTop="5dp"
-                        android:paddingBottom="5dp"
-                        android:layout_marginStart="10dp"
                         android:layout_width="wrap_content"
-                        android:background="@drawable/devents"
-
                         android:layout_height="wrap_content"
-                        >
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/devents"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="10dp"
+
+                        android:paddingBottom="5dp">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:padding="5dp"
                             android:text="Weekend"
                             android:textColor="@color/black"
-                            android:padding="5dp"
-                            android:textStyle="bold"
                             android:textSize="10dp"
+                            android:textStyle="bold"
 
 
                             />
 
                         <ImageView
-                            android:layout_gravity="center_vertical"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/arrow"
-                            />
-
-
-
-
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/arrow" />
 
 
                     </LinearLayout>
-
-
-
 
 
                 </LinearLayout>
 
 
-
                 <LinearLayout
-                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
-                    android:layout_height="wrap_content">
-
+                    android:layout_marginTop="10dp">
 
 
                     <LinearLayout
                         android:id="@+id/choose"
-                        android:paddingStart="10dp"
-                        android:paddingEnd="10dp"
-                        android:paddingTop="5dp"
-                        android:paddingBottom="5dp"
-                        android:layout_marginStart="10dp"
                         android:layout_width="wrap_content"
-                        android:background="@drawable/devents"
-
                         android:layout_height="wrap_content"
-                        >
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/devents"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="10dp"
+
+                        android:paddingBottom="5dp">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:padding="5dp"
                             android:text="Choose"
-                            android:padding="5dp"
                             android:textColor="@color/black"
-                            android:textStyle="bold"
                             android:textSize="10dp"
+                            android:textStyle="bold"
 
 
                             />
 
                         <ImageView
-                            android:layout_gravity="center_vertical"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/arrow"
-                            />
-
-
-
-
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/arrow" />
 
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:paddingStart="10dp"
-                        android:paddingEnd="10dp"
-                        android:paddingTop="5dp"
-                        android:paddingBottom="5dp"
-                        android:layout_marginStart="10dp"
                         android:layout_width="wrap_content"
-                        android:background="@drawable/devents"
-
                         android:layout_height="wrap_content"
-                        >
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/devents"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="10dp"
+
+                        android:paddingBottom="5dp">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:padding="5dp"
                             android:text="Upcoming"
-                            android:padding="5dp"
                             android:textColor="@color/black"
-                            android:textStyle="bold"
                             android:textSize="10dp"
+                            android:textStyle="bold"
 
 
                             />
 
                         <ImageView
-                            android:layout_gravity="center_vertical"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/arrow"
-                            />
-
-
-
-
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/arrow" />
 
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:paddingStart="10dp"
-                        android:paddingEnd="10dp"
-                        android:paddingTop="5dp"
-                        android:paddingBottom="5dp"
-                        android:layout_marginStart="10dp"
                         android:layout_width="wrap_content"
-                        android:background="@drawable/devents"
-
                         android:layout_height="wrap_content"
-                        >
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/devents"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="10dp"
+
+                        android:paddingBottom="5dp">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Past"
                             android:padding="5dp"
+                            android:text="Past"
                             android:textColor="@color/black"
-                            android:textStyle="bold"
                             android:textSize="10dp"
+                            android:textStyle="bold"
 
 
                             />
 
                         <ImageView
-                            android:layout_gravity="center_vertical"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/arrow"
-                            />
-
-
-
-
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/arrow" />
 
 
                     </LinearLayout>
-
-
-
 
 
                 </LinearLayout>
-
-
 
 
             </LinearLayout>
 
 
-
-
-
             <LinearLayout
-                android:layout_margin="20dp"
                 android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
 
 
                 <TextView
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="New Groups"
-                    android:layout_height="wrap_content">
+                    android:textColor="@color/black"
+                    android:textSize="20dp">
 
                 </TextView>
 
@@ -342,62 +303,61 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/newgroupsrecycler"
 
-                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_margin="20dp"
                 android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
 
 
                 <TextView
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="Popular Now"
-                    android:layout_height="wrap_content">
+                    android:textColor="@color/black"
+                    android:textSize="20dp">
 
                 </TextView>
 
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/popularnow"
-                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
 
             </LinearLayout>
 
 
             <LinearLayout
-                android:layout_margin="20dp"
                 android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
 
 
                 <TextView
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="New Groups"
-                    android:layout_height="wrap_content">
+                    android:textColor="@color/black"
+                    android:textSize="20dp">
 
                 </TextView>
 
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
 
             </LinearLayout>
-
 
 
         </LinearLayout>

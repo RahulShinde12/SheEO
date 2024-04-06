@@ -45,12 +45,22 @@ public interface FetchAdIDApi {
 
 
     @FormUrlEncoded
-    @POST("getUser.php")
-    Call<InvestorModel> getusers(
+    @POST("getAllUSersData.php")
+    Call<List<InvestorModel>> getusers(
             @Field("id") String id
 
 
     );
+
+
+    @FormUrlEncoded
+    @POST("getUser.php")
+    Call<InvestorModel> getuserssingle(
+            @Field("id") String id
+
+
+    );
+
 
 
 

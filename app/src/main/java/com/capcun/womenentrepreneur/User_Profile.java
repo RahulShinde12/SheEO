@@ -26,7 +26,9 @@ public class User_Profile extends AppCompatActivity {
 
     ImageView back;
     TextView name,bio,region,college,experience,connection,mail,phone;
-    Button logout,createPost;
+    Button logout,createPost,mentors;
+
+
 
 
     ImageView img;
@@ -47,6 +49,17 @@ public class User_Profile extends AppCompatActivity {
         }
 
         createPost = findViewById(R.id.create_post);
+        mentors = findViewById(R.id.mentors);
+
+        mentors.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(User_Profile.this,Mentor.class);
+                startActivity(intent);
+            }
+        });
+
+
 
         createPost.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,6 +79,20 @@ public class User_Profile extends AppCompatActivity {
         mail = findViewById(R.id.mail);
         phone = findViewById(R.id.phone);
         img = findViewById(R.id.profileImg);
+
+
+        Button btn = findViewById(R.id.chatbot);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(User_Profile.this,ChatBot.class);
+                startActivity(intent);
+            }
+        });
+
+
+
 
         String user_id="6";
 

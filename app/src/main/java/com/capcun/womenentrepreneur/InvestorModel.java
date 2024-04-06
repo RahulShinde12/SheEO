@@ -1,78 +1,94 @@
 package com.capcun.womenentrepreneur;
 
-
 //public class package com.capcun.womenentrepreneur.FetchUserProfile;
 
 public class InvestorModel {
-
-    private int userId;
-    private String userName;
+    private String user_id;
+    private String user_name;
     private String email;
-    private int emailStatus;
+    private String email_status;
     private String password;
-    private String profileImg;
+    private String profile_img;
     private String phone;
-    private String firstName;
-    private String lastName;
+    private String first_name;
+    private String last_name;
     private String country;
     private String region;
-    private String jobTitle;
-    private String schoolCollegeUniversity;
-    private int startYear;
-    private int endYear;
-    private int age;
+    private String job_title;
+    private String school_college_university;
+    private String start_year;
+    private String end_year;
+    private String age;
     private String bio;
-    private String registrationDate;
-    private boolean meetupRegistered;
-    private String userType;
+    private String registration_date;
+    private String meetup_registered;
+    private String user_type;
     private String following;
-    private String interestedDomain;
-    private String interestedSubdomain;
-    private String feedInterest;
+    private String interested_domain;
+    private String interested_subdomain;
+    private String feed_interest;
 
-    public InvestorModel(int userId, String userName, String email, int emailStatus, String password, String profileImg, String phone, String firstName, String lastName, String country, String region, String jobTitle, String schoolCollegeUniversity, int startYear, int endYear, int age, String bio, String registrationDate, boolean meetupRegistered, String userType, String following, String interestedDomain, String interestedSubdomain, String feedInterest) {
-        this.userId = userId;
-        this.userName = userName;
+    public InvestorModel() {
+
+    }
+
+
+
+    public String getFirst_name() {
+        return first_name;
+    }
+
+
+    public String getLast_name() {
+        return last_name;
+    }
+
+    public InvestorModel(String user_id, String user_name, String email, String email_status, String password,
+                         String profile_img, String phone, String first_name, String last_name, String country,
+                         String region, String job_title, String school_college_university, String start_year,
+                         String end_year, String age, String bio, String registration_date, String meetup_registered,
+                         String user_type, String following, String interested_domain, String interested_subdomain,
+                         String feed_interest) {
+        this.user_id = user_id;
+        this.user_name = user_name;
         this.email = email;
-        this.emailStatus = emailStatus;
+        this.email_status = email_status;
         this.password = password;
-        this.profileImg = profileImg;
+        this.profile_img = profile_img;
         this.phone = phone;
-        this.firstName = firstName;
-        this.lastName = lastName;
+        this.first_name = first_name;
+        this.last_name = last_name;
         this.country = country;
         this.region = region;
-        this.jobTitle = jobTitle;
-        this.schoolCollegeUniversity = schoolCollegeUniversity;
-        this.startYear = startYear;
-        this.endYear = endYear;
+        this.job_title = job_title;
+        this.school_college_university = school_college_university;
+        this.start_year = start_year;
+        this.end_year = end_year;
         this.age = age;
         this.bio = bio;
-        this.registrationDate = registrationDate;
-        this.meetupRegistered = meetupRegistered;
-        this.userType = userType;
+        this.registration_date = registration_date;
+        this.meetup_registered = meetup_registered;
+        this.user_type = user_type;
         this.following = following;
-        this.interestedDomain = interestedDomain;
-        this.interestedSubdomain = interestedSubdomain;
-        this.feedInterest = feedInterest;
+        this.interested_domain = interested_domain;
+        this.interested_subdomain = interested_subdomain;
+        this.feed_interest = feed_interest;
     }
 
-    // Getters and setters for all fields
-
-    public int getUserId() {
-        return userId;
+    public String getUser_id() {
+        return user_id;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
+    public void setUser_id(String user_id) {
+        this.user_id = user_id;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUser_name() {
+        return user_name;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUser_name(String user_name) {
+        this.user_name = user_name;
     }
 
     public String getEmail() {
@@ -83,12 +99,12 @@ public class InvestorModel {
         this.email = email;
     }
 
-    public int getEmailStatus() {
-        return emailStatus;
+    public String getEmail_status() {
+        return email_status;
     }
 
-    public void setEmailStatus(int emailStatus) {
-        this.emailStatus = emailStatus;
+    public void setEmail_status(String email_status) {
+        this.email_status = email_status;
     }
 
     public String getPassword() {
@@ -99,12 +115,12 @@ public class InvestorModel {
         this.password = password;
     }
 
-    public String getProfileImg() {
-        return profileImg;
+    public String getProfile_img() {
+        return profile_img;
     }
 
-    public void setProfileImg(String profileImg) {
-        this.profileImg = profileImg;
+    public void setProfile_img(String profile_img) {
+        this.profile_img = profile_img;
     }
 
     public String getPhone() {
@@ -115,20 +131,12 @@ public class InvestorModel {
         this.phone = phone;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public void setFirst_name(String first_name) {
+        this.first_name = first_name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLast_name(String last_name) {
+        this.last_name = last_name;
     }
 
     public String getCountry() {
@@ -147,43 +155,43 @@ public class InvestorModel {
         this.region = region;
     }
 
-    public String getJobTitle() {
-        return jobTitle;
+    public String getJob_title() {
+        return job_title;
     }
 
-    public void setJobTitle(String jobTitle) {
-        this.jobTitle = jobTitle;
+    public void setJob_title(String job_title) {
+        this.job_title = job_title;
     }
 
-    public String getSchoolCollegeUniversity() {
-        return schoolCollegeUniversity;
+    public String getSchool_college_university() {
+        return school_college_university;
     }
 
-    public void setSchoolCollegeUniversity(String schoolCollegeUniversity) {
-        this.schoolCollegeUniversity = schoolCollegeUniversity;
+    public void setSchool_college_university(String school_college_university) {
+        this.school_college_university = school_college_university;
     }
 
-    public int getStartYear() {
-        return startYear;
+    public String getStart_year() {
+        return start_year;
     }
 
-    public void setStartYear(int startYear) {
-        this.startYear = startYear;
+    public void setStart_year(String start_year) {
+        this.start_year = start_year;
     }
 
-    public int getEndYear() {
-        return endYear;
+    public String getEnd_year() {
+        return end_year;
     }
 
-    public void setEndYear(int endYear) {
-        this.endYear = endYear;
+    public void setEnd_year(String end_year) {
+        this.end_year = end_year;
     }
 
-    public int getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(String age) {
         this.age = age;
     }
 
@@ -195,28 +203,28 @@ public class InvestorModel {
         this.bio = bio;
     }
 
-    public String getRegistrationDate() {
-        return registrationDate;
+    public String getRegistration_date() {
+        return registration_date;
     }
 
-    public void setRegistrationDate(String registrationDate) {
-        this.registrationDate = registrationDate;
+    public void setRegistration_date(String registration_date) {
+        this.registration_date = registration_date;
     }
 
-    public boolean isMeetupRegistered() {
-        return meetupRegistered;
+    public String getMeetup_registered() {
+        return meetup_registered;
     }
 
-    public void setMeetupRegistered(boolean meetupRegistered) {
-        this.meetupRegistered = meetupRegistered;
+    public void setMeetup_registered(String meetup_registered) {
+        this.meetup_registered = meetup_registered;
     }
 
-    public String getUserType() {
-        return userType;
+    public String getUser_type() {
+        return user_type;
     }
 
-    public void setUserType(String userType) {
-        this.userType = userType;
+    public void setUser_type(String user_type) {
+        this.user_type = user_type;
     }
 
     public String getFollowing() {
@@ -227,37 +235,27 @@ public class InvestorModel {
         this.following = following;
     }
 
-    public String getInterestedDomain() {
-        return interestedDomain;
+    public String getInterested_domain() {
+        return interested_domain;
     }
 
-    public void setInterestedDomain(String interestedDomain) {
-        this.interestedDomain = interestedDomain;
+    public void setInterested_domain(String interested_domain) {
+        this.interested_domain = interested_domain;
     }
 
-    public String getInterestedSubdomain() {
-        return interestedSubdomain;
+    public String getInterested_subdomain() {
+        return interested_subdomain;
     }
 
-    public void setInterestedSubdomain(String interestedSubdomain) {
-        this.interestedSubdomain = interestedSubdomain;
+    public void setInterested_subdomain(String interested_subdomain) {
+        this.interested_subdomain = interested_subdomain;
     }
 
-    public String getFeedInterest() {
-        return feedInterest;
+    public String getFeed_interest() {
+        return feed_interest;
     }
 
-    public void setFeedInterest(String feedInterest) {
-        this.feedInterest = feedInterest;
+    public void setFeed_interest(String feed_interest) {
+        this.feed_interest = feed_interest;
     }
-
-    public String getFirst_name() {
-        return firstName;
-    }
-
-
-    public String getLast_name() {
-        return lastName;
-    }
-
 }

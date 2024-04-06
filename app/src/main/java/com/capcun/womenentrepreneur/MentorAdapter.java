@@ -57,6 +57,7 @@ public class MentorAdapter extends RecyclerView.Adapter<MentorAdapter.LeadData>{
 
 
 
+        holder.domain.setText(dataholder2.get(position).getInterested_domain());
         holder.name.setText(dataholder2.get(position).getFirst_name()+ " "+dataholder2.get(position).getLast_name());
         holder.bio.setText(dataholder2.get(position).getBio());
 //        holder.name.setText(dataholder2.get(position).getName());
@@ -146,6 +147,8 @@ public class MentorAdapter extends RecyclerView.Adapter<MentorAdapter.LeadData>{
         LinearLayout card;
         TextView name,bio;
         LinearLayout bottomsheet;
+
+        TextView domain;
         public LeadData(@NonNull View itemView)
         {
             super(itemView);
@@ -154,6 +157,8 @@ public class MentorAdapter extends RecyclerView.Adapter<MentorAdapter.LeadData>{
 
             name = itemView.findViewById(R.id.med_name);
             bio = itemView.findViewById(R.id.bio);
+
+            domain = itemView.findViewById(R.id.domain);
 
         }
     }
